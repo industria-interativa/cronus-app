@@ -1,0 +1,19 @@
+{
+  "name": "cronus-app",
+  "version": "1.0.0",
+  "description": "Cronus App",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prestart": "npm install",
+    "start": "nodemon ./bin/www"
+  },
+  "author": "mjr",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.14.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.3",
+    "mongoose": "^4.1.7"
+  }
+}

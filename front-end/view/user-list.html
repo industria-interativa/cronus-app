@@ -1,0 +1,22 @@
+<table class="table table-hover" data-ng-init="vm.initList()">
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Nome</th>
+      <th>Email</th>
+      <th>Username</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr data-ng-repeat="user in vm.users">
+			<th>
+				<button type="button" class="btn btn-danger btn-sm" data-ng-click="vm.delete(user)">
+					<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
+				</button>
+			</th>
+      <td>{{user.name}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.username}}</td>
+    </tr>
+  </tbody>
+</table>
