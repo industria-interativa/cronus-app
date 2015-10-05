@@ -1,5 +1,5 @@
-var mongoose = require('mongoose');
-var dbURI = 'mongodb://localhost/cronus-db';
+var mongoose = require('mongoose')
+  , dbURI = 'mongodb://localhost/cronus-db';
 
 mongoose.connect(dbURI);
 

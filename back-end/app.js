@@ -1,8 +1,8 @@
-var express = require('express');
-var app = express();
-var bodyParser = require('body-parser');
-var cors = require('cors');
-var db = require('./config/db');
+var express = require('express')
+  , cors = require('cors')
+  , bodyParser = require('body-parser')
+  , app = express()
+  , db = require('./config/db');
 
 app.disable('x-powered-by');
 
@@ -16,9 +16,8 @@ api.users = require('./modules/users/routes');
 
 app.use('/api/v1/users', api.users);
 
-/* Hello API */
-app.get("/api", function(req, resp) {
-	resp.send("App!");
+app.get('/api', function(req, res, next){
+  res.json({msg: 'This is CORS-enabled for all origins!'});
 });
 
 module.exports = app;

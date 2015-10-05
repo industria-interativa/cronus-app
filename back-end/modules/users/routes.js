@@ -1,6 +1,6 @@
-var express = require('express');
-var router = express.Router();
-var User = require('./model');
+var express = require('express')
+  , router = express.Router()
+  , User = require('./model');
 
 router.get('/', function(req, res) {
   User.find({}, function(err, data) {
