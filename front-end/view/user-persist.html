@@ -1,19 +1,24 @@
-<form data-ng-init="vm.initPersist()" data-ng-submit="vm.save(vm.user)">
-	<div class="form-group">
-    <label for="iname">Nome</label>
-    <input type="text" class="form-control" id="iname" placeholder="Digite aqui seu Nome Completo" data-ng-model="vm.user.name">
-  </div>
-	<div class="form-group">
-    <label for="iemail">Email</label>
-    <input type="email" class="form-control" id="iemail" placeholder="Digite aqui seu Email" data-ng-model="vm.user.email">
-  </div>
-  <div class="form-group">
-    <label for="iusername">Username</label>
-    <input type="text" class="form-control" id="iusername" placeholder="Digite aqui seu Username" data-ng-model="vm.user.username">
-  </div>
-	<div class="form-group">
-    <label for="ipassword">Senha</label>
-    <input type="password" class="form-control" id="ipassword" placeholder="Digite aqui sua Senha" data-ng-model="vm.user.password">
-  </div>
-  <button type="submit" class="btn btn-success">Cadastrar</button>
-</form>
+<md-content layout-padding>
+  <md-subheader class="md-no-sticky">Cadastro de Usuário</md-subheader>
+  <form data-ng-init="vm.initPersist()" data-ng-submit="vm.save(vm.user)">
+    <md-input-container flex>
+      <label>Nome</label>
+      <input ng-model="vm.user.name">
+    </md-input-container>
+		<md-input-container flex>
+      <label>Email</label>
+      <input ng-model="vm.user.email">
+    </md-input-container>
+    <div layout layout-sm="column">
+      <md-input-container flex>
+        <label>Username</label>
+        <input ng-model="vm.user.username">
+      </md-input-container>
+      <md-input-container flex>
+        <label>Senha</label>
+        <input type="password" ng-model="vm.user.password">
+      </md-input-container>
+		</div>
+	  <md-button class="md-raised md-primary" type="submit">Cadastrar</md-button>
+  </form>
+</md-content>

@@ -1,0 +1,19 @@
+ng-md-icon > svg {
+    vertical-align: middle;
+}
+
+.icon-menu {
+  margin: auto 16px auto 0;
+}
+
+.button-icon {
+  margin-top: 17.2px;
+}
+
+.menudemoBasicUsage .md-menu-demo {
+  padding: 24px;
+}
+
+.menudemoBasicUsage .menu-demo-container {
+  min-height: 200px;
+}
